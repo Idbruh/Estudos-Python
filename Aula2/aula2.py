@@ -1,0 +1,6 @@
+print('='*50)
+print('\n'*3)
+print('\t Testee', 'da')
+print('Aula2')
+print('\n'*3)
+print('='*50)
