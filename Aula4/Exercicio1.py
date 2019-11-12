@@ -1,4 +1,4 @@
-#incluido comentários no código: use "#" ou \\\ para comentario longo
+#incluido comentários no código: use "#" ou ''' para comentario longo
 #Revisar concatenação
 #Realiza as 4 operações
 #Fazer programa que leia 2 numeros

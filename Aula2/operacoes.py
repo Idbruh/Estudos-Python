@@ -5,6 +5,12 @@ idade = input('Digite a sua idade: ')
 
 print(f'Nome Completo:{nome_completo}, Idade:{idade}')
 
+x = 2
+y = 5
 
+if 2 * x < y:
+    print('true')
+else:
+    print(false)
 
     
