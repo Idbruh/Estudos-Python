@@ -22,15 +22,17 @@ categoria2 = 2
 
 if idade >= 18:
     print('Você tem autorização para comprar alcoolicos!') 
-    int(input('Digite ', 1, ' para continuar: '))
+    #int(input('Digite ', 1, ' para continuar: '))
 else:
     print('Voce não pode comprar alcoolicos!')
-    int(input('Digite ', 2, ' para continuar: '))
 
-print('Mercado Tech')
+print('Mercado Tech Produtos')
 
-if Categoria 1 == true:
-    print('Cerveja')
+if idade >= 18:
+    print('Alcolicos')
+else:
+    print('Não alcoolicos')
+
 
 
 
