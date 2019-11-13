@@ -5,3 +5,14 @@
 #       1- o nome dos alunos
 #       2 media do aluno
 #       3 -resultado (aprovado>=7.0)
+
+
+lista_alunos = []
+lista_notas = []
+
+lista_alunos = []
+
+for i in range(1,10):
+    nome = input(f'Nome dos alunos {i}: ')
+    lista_alunos.append(nome)
+print(lista_alunos)

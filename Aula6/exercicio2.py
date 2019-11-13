@@ -4,3 +4,6 @@
 #imprima a taboada completa
 
 numero = int(input('Digite um numero: '))
+
+for i in range(0,11):
+    print(f'{i} x {numero} = {i*numero}')
