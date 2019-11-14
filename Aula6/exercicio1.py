@@ -5,9 +5,11 @@
 
 lista_alunos = []
 
-for i in range(1,10):
+'''for i in range(1,10):
     nome = input(f'Nome dos alunos {i}: ')
     lista_alunos.append(nome)
+print(lista_alunos)'''
+
+for i in range(0,10):
+    lista_alunos.append(input('Nome dos alunos: '))
 print(lista_alunos)
-
-
