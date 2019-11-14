@@ -20,19 +20,32 @@
 
 # print(f"{dicionario_alunos['Nome']} - {dicionario_alunos['Situação']}")
 
-dicionario_bandas = {}
+'''dicionario_bandas = {}
 dicionario_bandas['Nome'] = 'Calipso'
-print(dicionario_bandas)
+print(dicionario_bandas)'''
 
 #ou
 
-dicionario_bandas2 = {'Nome': ''}
+'''dicionario_bandas2 = {'Nome': ''}
 dicionario_bandas2['Nome'] = 'Deja vu'
-print(dicionario_bandas2)
+print(dicionario_bandas2)'''
 
 #ou
 
-dicionario_nome ={'Nome':'Joana', 'Sobrenome':'aloka' }
+'''dicionario_nome ={'Nome':'Joana', 'Sobrenome':'aloka' }
 dicionario_nome['Sobrenome'] = 'Surtada'
 dicionario_nome['CPF'] = '08366333930'
-print(dicionario_nome)
+print(dicionario_nome)'''
+
+# ou
+
+dicionario_pessoas ={'Nome':'', 'Sobrenome':'', 'CPF':'', 'Rg':''}
+lista_pessoas = []
+for i in range(1,3):
+    dicionario_pessoas['Nome'] = input('Digite o nome: ')
+    dicionario_pessoas['Sobrenome'] = input('Digite o Sobrenome: ')
+    dicionario_pessoas['CPF'] = input('Digite o CPF: ')
+    dicionario_pessoas['Rg'] = input('Digite o Rg: ')
+    lista_pessoas.append(dicionario_pessoas)
+
+print(lista_pessoas)
