@@ -12,3 +12,11 @@ print('idade:{} salario:{} nome:{}'.format(idade, salario, nome)) #formatar vari
 print(f'idade:{idade} salario:{salario} nome:{nome}') #interpolação de string
 print('\n'*3)
 print('='*50)
+
+
+print('''este FDS eu fui para a praia tomar sol
+         e fiquei no sol fazendo exercicio de python
+         e fiquei todo queimado''')
+
+nome_completo = 'Bru ' '' 'Carmo'#--- concatenação de string
+print(nome_completo)
