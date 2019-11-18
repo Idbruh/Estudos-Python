@@ -19,7 +19,8 @@ print(resultado)
 resultado = numero2 // numero1#// descarta a parte fracionada, retorna só o inteiro
 print(resultado)
 
-resultado2 = numero1 % numero2 # retorna o resto da divisão 10/3== 9  resto==1
+# retorna o resto da divisão 10/3== 9  resto==1
+resultado2 = numero1 % numero2 
 print(resultado2)
 
 #EXPONENCIAÇÃO
@@ -31,9 +32,9 @@ resultado4 = 9**0.5
 print(resultado4)
 
 #Porcentagem
-resultado5_inss = 1000*0.08
+resultado5_inss = 1000*0.08 # 1000*8/100
 print(resultado5_inss)
-resultado5_IRRF = 10000*0.275
+resultado5_IRRF = 10000*0.275# 10000*27.5/100
 print(resultado5_IRRF)
 
 

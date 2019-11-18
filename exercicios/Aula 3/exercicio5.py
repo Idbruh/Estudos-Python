@@ -13,4 +13,4 @@ gasto2 = salario*20/100
 gasto3 = salario*10/100
 gasto4 = salario*20/100
 
-print(f'\nOlá {nome}, segue abaixo os valores para cada categoria: \n\nSalario total: {salario:.2f}\n\nContas fixas: {gasto1:.2f}\n\nInvestimentos de longo prazo: {gasto2:.2f}\n\nInvestimentos de curto prazo: {gasto3:.2f}\n\nGasto livre: {gasto4:.2f}\n')
+print(f'\nOlá {nome}, seguem abaixo os valores para cada categoria: \n\nSalario total: {salario:.2f}\n\nContas fixas: {gasto1:.2f}\n\nInvestimentos de longo prazo: {gasto2:.2f}\n\nInvestimentos de curto prazo: {gasto3:.2f}\n\nGasto livre: {gasto4:.2f}\n')

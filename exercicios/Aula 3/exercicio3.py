@@ -21,19 +21,19 @@ cargo = input('Digite se cargo: ')
 salario = float(input('Digite o seu salário: $ '))
 
 if salario <= 1751.81:
-    print('O desconto do INSS é: $ ', salario*8/100)
+    print('O desconto do INSS é: $ ', salario*0.08)
 elif salario <= 2919.72:
-    print('O desconto do INSS é: $ ', salario*9.5/100)
+    print('O desconto do INSS é: $ ', salario*0.95)
 else:
-    print('O desconto do INSS é: $ ', salario*11/100)
+    print('O desconto do INSS é: $ ', salario*0.11)
 
 if salario <= 1903.98:
     print('Você não tem desconto de IRRF.')
 elif salario <= 2826.65:
-    print('O desconto do IRRF é: $ ', salario*7.5/100)
+    print('O desconto do IRRF é: $ ', salario*0.75)
 elif salario <= 3751.05:
-    print('O desconto do IRRF é: $ ', salario*15/100)
+    print('O desconto do IRRF é: $ ', salario*0.15)
 elif salario <= 4664.68:
-    print('O desconto do IRRF é: $ ', salario*22.5/100)
+    print('O desconto do IRRF é: $ ', salario*0.225)
 else:
-    print('O desconto do IRRF é: $ ', salario*27.5/100)
+    print('O desconto do IRRF é: $ ', salario*0.275)
