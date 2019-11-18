@@ -1,3 +1,5 @@
+# Aula 8 -   T u p l a s
+
 numeros = [1,3,5,6]
 usuario = {'nome':'user', 'passwd':123456}
 pessoa = ('bruh', 'carmo', 0,45.5)
