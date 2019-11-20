@@ -13,20 +13,24 @@
 #2-
 
 print('=' *50)
-print('Mercado Tech')
+print('M e r c ad o   T e c h')
 nome = input('Digite o seu nome: ')
 idade = int(input(f'Olá {nome}, agora digite a sua idade: '))
 
-categoria1 = 1
+categoria1 = 1==('1. Cerveja, 2.Cerveja2')
 categoria2 = 2
 
 if idade >= 18:
     print('Você tem autorização para comprar alcoolicos!') 
-    #int(input('Digite ', 1, ' para continuar: '))
 else:
     print('Voce não pode comprar alcoolicos!')
 
-print('Mercado Tech Produtos')
+print('M e r c a d o   T e c h   P r o d u t o s')
+
+categoria = int(input('Digite ', 1, ' para continuar: '))
+if categoria == 1:
+    print('digite 1')
+
 
 if idade >= 18:
     print('Alcolicos')
