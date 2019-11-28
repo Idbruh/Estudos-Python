@@ -1,4 +1,4 @@
-# --- Aula 11 - 21-11-2019   
+ # --- Aula 11 - 21-11-2019   
 # --- 
 
 # --- 1.Crie um programa que calcule
@@ -7,7 +7,9 @@
 # --- 2.Crie um procgrama que calcule a renabilidade anual de um investimento
 #     baseando-se em sua rentabilidade deve ser apresentada em % e R$
 #       --- Utilizar metodos
-# --- 3.Crie um programa para calculo de investimento
+# --- 3.Crie um programa para calculo de investimento 
+# --- solicitar valor a ser investido no Tesouro Selic
+# Calcular o valot total até o vencimento do titulo
 #       --- Utilizar metodos
 # --- 4.
 #       --- Utilizar metodos
