@@ -28,9 +28,9 @@ arquivo.close()'''
 
 #-- incluindo metodo
 def salvar_pessoa(pessoa_dicionario):
-    arquivo = open('aula15.txt','a')
+    arquivo = open('Aula15/aula15.txt','a')
     arquivo.write(f"{pessoa_dicionario['nome']};{pessoa_dicionario['sobrenome']};{pessoa_dicionario['idade']}\n")
-    arquivo.close
+    arquivo.close()
 
 #restorno desta função terá todos os itens da minha lista
 def ler():
@@ -60,7 +60,7 @@ for p in ler():
 #-- primeiro: define as variaveis com input
 #-- segundo: define um dicionários para armazenar os dados das variaveis separando os
 #   itens por ';' para evitar conflitos
-#-- criar uma função ( def ler(): ) e  cria uma lista de string ( lista = [] ) e 
+#-- criar uma metodo ( def ler(): ) e  cria uma lista de string ( lista = [] ) e 
 #   usa .append na variavel definida pelo for [ex: for linha in arquivo --> lista.append(linha)]
 #   fecha o arquivo e retorna a lista (return lista) 
 #-- ler a função definida (--  print (ler() ) --) 

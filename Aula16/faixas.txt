@@ -1,0 +1,2 @@
+teste;aaa;bbb
+aaa;bb;cc
