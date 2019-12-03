@@ -21,7 +21,14 @@ cerveja = (('marca', 'tipo', 'ibu','preço'),
 # cervejas.
 
 cab = cerveja[0]
+# (('marca', 'tipo', 'ibu','preço')
+
 dados = cerveja[1:]
+#('Skol[0]','IPA','ultra-leve',3.50),
+#('Brahma[1]','lager','leve/media',3.45),
+#('Kaiser[2]','Americam Larger','leve',2.35),
+#('Sol[3]','larger mão','agua',1.19)
+
 
 for dados_cerveja in dados:
     print(f'\n{cab[0]} {dados_cerveja[0]}')

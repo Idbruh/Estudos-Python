@@ -12,7 +12,7 @@
 
 #Regra: Não pode usar a função range e no máximo 2 print()
 
-lista = [
+lista = [#i
           ['mamão','abacaxi','laranja','uva','pera','maçã','vergamota'],
           ['skol','kaiser','sol','schin','brahma','itaipava','bavaria'],
           ['alface crespa', 'alface lisa','rucula','almerão','repolho','salsinha',],
@@ -23,3 +23,38 @@ lista = [
           ['carro','moto','vespa','caminhão','sprinter','kombi','fusca'],
           ['calça','camisa','japona','jaqueta','camiseta','bone','regata']
         ]
+
+cont = 0
+
+for i in lista:
+  print('########## posição', cont, '######## ')
+  cont = cont + 1
+  for j in i:
+    print(j)
+  
+
+'''
+cont = 0
+
+for i in lista:
+  print('########## posição', cont, '######## ')
+  cont = cont + 1
+  for j in i:
+    print(j)
+    for k in j:
+      print(k)'''
+
+
+
+
+
+
+'''cab = (f'##### {lista[0]} ######')
+dados = lista[0]
+
+dic = {lista[0]}
+
+for x in dados:
+  dic = {}
+  print(f'{cab[0]}')
+  print(f'{dic[0]}')'''
