@@ -24,14 +24,23 @@ lista = [#i
           ['calça','camisa','japona','jaqueta','camiseta','bone','regata']
         ]
 
-cont = 0
 
-for i in lista:
-  print('########## posição', cont, '######## ')
-  cont = cont + 1
-  for j in i:
-    print(j)
-  
+
+def lista_item():
+  cont = 0#contador
+  for lista_pequena in lista:
+    print('########## posição', cont, '######## ') #print(f'########## posição {cont} ######## ')
+    cont = cont + 1
+    for dados in lista_pequena:
+      print(dados)
+lista2 = lista_item()
+
+print(lista2)
+
+
+
+
+
 
 '''
 cont = 0

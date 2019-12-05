@@ -29,7 +29,10 @@ dados = cerveja[1:]
 #('Kaiser[2]','Americam Larger','leve',2.35),
 #('Sol[3]','larger mão','agua',1.19)
 
-
+def recebe(cerveja):
+    cab = cerveja[0] #separar o cabeçalho
+    lista_cerveja = [] #iniciar uma lista para receber os dados
+    dados = cerveja[1] #separar os dados da tupla
 for dados_cerveja in dados:
     print(f'\n{cab[0]} {dados_cerveja[0]}')
     print(f'{cab[1]} {dados_cerveja[1]}')
