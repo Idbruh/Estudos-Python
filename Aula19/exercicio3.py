@@ -24,4 +24,24 @@
 #                                                com o dobro do amargor!!!"
 #      Lembre-se: É importante que apareça a frase. Pois a mesma será encaminhada por e-mail pela equipe de marketing
 
+#--# Com o arquivo de cadastro.txt onde possui os seguintes dados: codigo cliente, nome, idade, sexo, e-mail e telefone
+# 1 - Crie um metodo que gere e retorne uma lista com bibliotecas com os dados dos clientes
 
+def criar_dados():
+    arquivo = open ('Aula19/cadastro.txt')
+    lista_cabec = []
+    for linha in arquivo:
+        
+
+
+
+def ler_faixa():
+    arquivo = open('Aula16/faixas.txt','r')
+    lista_faixas = []
+    for linha in arquivo:
+        linha = linha.strip()
+        dados_faixa = linha.split(';')
+        faixa = criar_faixa(dados_faixa[0],dados_faixa[1],dados_faixa[2])
+        lista_faixas.append(faixa)
+    arquivo.close()
+    return lista_faixas
