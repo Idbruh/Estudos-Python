@@ -5,6 +5,7 @@
 # Dada a seguinte lista, resolva os seguintes questões:
 
 lista = [10, 20, 'amor', 'abacaxi', 80, 'Abioluz', 'Cachorro grande é de arrasar']
+#    # = 0    1    2        3        4     5                   6
 
 #--1 imprima o item 'abacaxi'
 print(lista[3])
