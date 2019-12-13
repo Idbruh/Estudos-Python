@@ -36,6 +36,7 @@ class Cliente:
         self.saldo_inicial = 100
     
     def adicionar_saldo(self,valor):
+        valor = float(input('Digite o valor que deseja incluir no cartão: $ '))
         self.saldo_inicial += valor
 
     def desconto_saldo(self,preco,ml):
@@ -47,3 +48,4 @@ class Cliente:
         else:
             self.saldo_inicial -= custo
             print(f'O valor descontado foi: {valor}. Foram liberados {ok} ml')
+

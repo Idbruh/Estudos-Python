@@ -42,12 +42,14 @@ class Pessoa:
     
     def __str__(self):
         texto = f'''
-    Codigo: {self.codigo}
-    Nome: {self.nome}
-    Idade: {self.idade}
-    Sexo: {self.sexo }
-    E-mail: {self.email} 
-    Telefone: {self.telefone}'''
+Codigo: {self.codigo}
+Nome: {self.nome}
+Idade: {self.idade}
+Sexo: {self.sexo }
+E-mail: {self.email} 
+Telefone: {self.telefone}
+
+'''
 
         return texto
 

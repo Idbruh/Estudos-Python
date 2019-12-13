@@ -44,10 +44,18 @@ class Cliente:
         self.email = a[4]
         self.telefone = a[5]
     
-    def salvar(self):
-        arquivo = open('exerc_2.txt','w')
-        arquivo.write(f'Codigo: {c.codigo}\nNome: {c.nome}\nIdade: {c.idade} anos\nSexo: {c.sexo}\nEmail: {c.email}\nTelefone: {c.telefone}')
+    def salvar(self,nome,atributo='a'):
+        arquivo = open('Aula23/exerc_2.txt',atributo)
+        arquivo.write(f'Codigo: {self.codigo}\nNome: {self.nome}\nIdade: {self.idade} anos\nSexo: {self.sexo}\nEmail: {self.email}\nTelefone: {c.telefone}')
         arquivo.close()   
+
+        #-- ou
+        def salvar(self,nome,atributo='a'):
+            if atributo == 'a':
+                arquivo = open('Aula23/exerc_2.txt',atributo)
+                arquivo.write(f'Codigo: {self.codigo}\nNome: {self.nome}\nIdade: {self.idade} anos\nSexo: {self.sexo}\nEmail: {self.email}\nTelefone: {c.telefone}')
+                arquivo.close()   
+
     
     def atualizar(self,codigo,nome,idade,sexo,email,telefone):
         self.codigo = codigo
@@ -56,11 +64,14 @@ class Cliente:
         self.sexo = sexo
         self.email = email
         self.telefone = telefone
+        self.dado_bruto = f'Codigo: {self.codigo}\nNome: {self.nome}\nIdade: {self.idade} anos\nSexo: {self.sexo}\nEmail: {self.email}\nTelefone: {self.telefone}'
+        self.salvar('arquivo')
         
             
    
 c = Cliente(dadobruto)
+c.salvar()
 c.cliente()
 c.atualizar(1,'Bruna',27,'f','b@b.com','41998683867')
-print(c.atualizar)
+print(c.nome)
 

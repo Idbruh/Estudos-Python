@@ -32,10 +32,10 @@ class Cliente:
         self.telefone = None
 
     def cliente(self):
-        a = self.dado_bruto.split(';')
+        a = self.dado_bruto.strip().split(';')
         self.codigo = int(a[0])
         self.nome = a[1]
-        self.idade = a[2]
+        self.idade = int(a[2])
         self.sexo = a[3]
         self.email = a[4]
         self.telefone = a[5]
@@ -49,31 +49,31 @@ print(f'Codigo: {c.codigo}\nNome: {c.nome}\nIdade: {c.idade}\nSexo: {c.sexo}\nEm
 
 # abioluz
 
-class Pessoa:
-    '''
-    Classe de pessoas
-    '''
-    def __init__(self,dadobruto):
-        self.dado_bruto = 
-        pessoa = self.dado_bruto.split(';')
-        self.codigo = int(a[0])
-        self.nome = pessoa[1]
-        self.idade = pessoa[2]
-        self.sexo = pessoa[3]
-        self.email = pessoa[4]
-        self.telefone = pessoa[5]
+# class Pessoa:
+#     '''
+#     Classe de pessoas
+#     '''
+#     def __init__(self,dadobruto):
+#         self.dado_bruto = 
+#         pessoa = self.dado_bruto.split(';')
+#         self.codigo = int(a[0])
+#         self.nome = pessoa[1]
+#         self.idade = pessoa[2]
+#         self.sexo = pessoa[3]
+#         self.email = pessoa[4]
+#         self.telefone = pessoa[5]
 
-    def __str__(self):
-        texto = f'''
-Codigo: {self.codigo}
-Nome: {self.nome}
-Idade: {self.idade}
-Sexo: {self.sexo}
-E-mail: {self.email}
-Telefone: {self.telefone}'''
-    return texto
+#     def __str__(self):
+#         texto = f'''
+# Codigo: {self.codigo}
+# Nome: {self.nome}
+# Idade: {self.idade}
+# Sexo: {self.sexo}
+# E-mail: {self.email}
+# Telefone: {self.telefone}'''
+#     return texto
 
 
-pess = []
-pess.append( pess[0] )
+# pess = []
+# pess.append( pess[0] )
 
