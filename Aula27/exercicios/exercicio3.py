@@ -26,8 +26,24 @@ from geradorlista import binario
 # 21
 # >>> lista
 # [1, 2, 3, 4, 5, 6]
-
+'''
 lista1 = [lista_simples_int() ,lista_simples_int(), lista_simples_int()]
+
+
+
+# t = [[1, 2], [3], [4, 5, 6]]
+
+def nested_sum(lista):
+    lista_completa = []
+    lista_completa.extend(lista1[0])
+    lista_completa.extend(lista1[1])
+    lista_completa.extend(lista1[2])
+    print(sum(lista_completa))
+    return lista_completa
+
+lista = nested_sum(lista1)
+print(lista)
+
 
 
 # 2) Com as seguintes listas, transforme em uma string para poder gravar (futuramente) em um arquivo!
@@ -41,31 +57,76 @@ lista_cadastrados = ['1', '11111111111', 'João Carlos', '12/12/90',
 lista_cadastrados1 = ['2', '22222222222', 'Paulo Roberto', '23/01/89',
                   'SC', 'Blumenau', '99999', 'Velha', '7 de setembro', '55', '']
 
+lista = []
+lista.extend(lista_cadastro)
+lista.extend(lista_cadastrados)
+lista.extend(lista_cadastrados1)
 
+string_lista = ';'.join(lista)
+
+
+print(lista)
+
+'''
+
+'''
 
 # 3) Com as seguintes lista, transforme em uma string para poder gravar (futuramente) em um arquivo!
 
 lista_cadastros = [['1', 'Arnaldo', '23', 'm', 'alexcabeludo2@hotmail.com', '014908648117'], ['2', 'Haroldo', '44', 'f', 'baratarebelde@gmail.com', '050923172729'], ['3', 'Pilar', '50', 'm', 'wanderson10sp@gmail.com', '018937341049'], ['4', 'Suzete Salvador', '45', 'f', 'eladiomp2@yahoo.com.br', '056928409823'], ['5', 'Riane', '37', 'f', 'orkutzimpower@terra.com.br', '018916004377'], ['6', 'Waldir', '34', 'f', 'nandah.s2@bol.com.br', '058903756441'], ['7', 'Lilian', '22', 'f', 'arydoido@gmail.com', '031958621596'], ['8', 'Matilde', '20', 'm', 'eu_kaka_@hotmail.com', '012941959390'], ['9', 'Samanta', '19', 'm', 'carro.tuning@yahoo.com.br', '028964480437'], ['10', 'Margarida', '30', 'm', 'paraaconta.08@hotmail.com', '047903547580'], ['11', 'Evelyn', '31', 'm', 'joaosilvaticudo@gmail.com', '053958638386'], ['12', 'Alessio', '29', 'm', 'w.nill02@gmail.com', '033961294774'], ['13', 'Yolanda', '25', 'm', 'patty_karen2005@hotmail.com', '027903312626'], ['14', 'Germana', '33', 'f', 'jarlinhatopdelinhagv@hotmail.com', '053964603415'], ['15', 'Helio', '33', 'f', 'juh.slim@gmail.com', '046997316461'], ['16', 'Liége', '21', 'f', 'gledsonlds@hotmail.com', '056992948431'], ['17', 'Yan', '42', 'm', 'lucapratto@yahoo.com.br', '016963562866'], ['18', 'Silvain', '50', 'f', 'hie.s2@hotmail.com', '021963399433'], ['19', 'Brian', '33', 'f', 'juliagabrielle06@hotmail.com', '027962676732'], ['20', 'Deoclides', '40', 'f', 'patriciamascena@gmail.com', '012961047979'], ['21', 'Jaqueline', '32', 'm', 'aninha183@hotmail.com', '014958997782'], ['22', 'Rosamaria', '45', 'f', 'j_leosao@hotmail.com', '026944672627'], ['23', 'Carla', '42', 'm', 'jhasdfjo@hotmail.com', '046976625208'], ['24', 'Aida Santos', '30', 'f', 'nayara.cristinap@hotmail.com', '034920819199'], ['25', 'Thomas', '19', 'm', 'jfdslinda@bol.com.br', '030974027667'], ['26', 'Naiara', '23', 'm', 'darknees_666@ig.com.br', '018976696717'], ['27', 'Karyne', '17', 'm', 'garotosonhador_1@hotmail.com', '054984689319'], ['28', 'Alenis Dias', '43', 'f', 'vi_vi_cristinaf@hotmail.com', '034980886309'], ['29', 'Grace', '38', 'm', 'amandakell@uol.com.br', '041932906720'], ['30', 'Zacarias', '31', 'm', 'loca.som@hotmail.com', '041926007066']]
 
+texto = ''
+for i in lista_cadastros:
+    texto = texto+';'.join(i)+'\n'
+print(texto)
 
+'''
+
+
+'''
 
 # 4) Crie uma função que solicite 5 nomes e retorne uma lista com todos eles
+lista_nomes = []
+posicao = 1
 
+quant = 5
 
+for i in range(quant):
+    nome = input(f'Digite a {posicao} pessoa: ')
+    lista_nomes.append(nome)
+    posicao += 1
 
+    
+
+print(lista_nome)
+
+'''
+'''
 # 5) Com a lista "Nomes", feita no exercicio 4 (anterior) faça uma cópia para 'Nomes2' e adicione 
 # o nome "Pedro Paulada" no "Nomes" e "Paulo Cacetada" no "Nomes2"
+lista_nomes = ['joao', 'bruna', 'cynthia', 'maracuja', 'aaaa']
 
+lista_nomes2 = lista_nomes.copy()
+
+lista_nomes2.extend(["Pedro Paulada","Paulo Cacetada"])
+print(lista_nomes2)
+'''
 
 
 # 6) Com a lista 'lista_aninhada' faça uma cópia e nomeie como 'lista_aninhada_2'. Na lista_aninhada
 # adicione ao lado do número 9 o número 10. Na lista_aninhada_2 adicione ao lado do número 8 a frase 
 # "Aqui não pode ter o número 10!"
+import copy
 
 lista_aninhada = [1,2,3,[4,5,[7,[9],8],6]]
 
+lista_aninhada_2 = copy.deepcopy(lista_aninhada)
+lista_aninhada_2[3][2][1].insert(1, 10)
+print(lista_aninhada_2)
 
 
+
+'''
 # 7) Continuando o exercicio, adicione a lista Nomes (exercicio 4) na lista_aninhada entre os números
 # 2 e o 3. Na lista_aninhada_2 adicione a "Pedro Pedroca" entre os números 4 e 5. 
 # Adicione na lista_aninhada, entre os números 1 e 2, a frase 'um, dois' e na lista_aninhada_2, 
@@ -274,3 +335,4 @@ lista_aninhada = [[1,2],[3,4],[5,6],[7,8],[9,10]]
 # 19.6) 9,10
 lista_aninhada = [[1,2],[3,4],[5,6],[7,8],[9,10]]
 
+'''
