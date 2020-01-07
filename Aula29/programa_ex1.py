@@ -149,12 +149,12 @@ presidiario
 ---------------------------------------------------------------
 Informe o elemento de identificação:
 ---------------------------------------------------------------
-Policial
-Piloto
-Chefe de Serviço
+policial
+piloto
+chefe de servico
 Oficial
-Comissária de bordo
-Presidiario
+comissaria
+presidiario
 
 ''')                                   # Cadastro de pessoas no terminal
         
