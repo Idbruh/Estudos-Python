@@ -1,11 +1,38 @@
-#   BANCO DE DADOS
-#   08/01/2019
-# SGBD: sistema gerenciador de banco de dados
-# MYSQL, SQLSERVER...
-# MYSQL = MARIADB
+BANCO DE DADOS
+08/01/2019
+SGBD: sistema gerenciador de banco de dados
+MYSQL, SQLSERVER...
+MYSQL = MARIADB
 # 
-# CRUD
-# C = CREATE  -- INERT
-# R = READ --  SELECT
-# U = UPDATE -- UPDATE
-# D = DELETE -- DELETE
+CRUD
+C = CREATE  -- INERT
+R = READ --  SELECT
+U = UPDATE -- UPDATE
+D = DELETE -- DELETE
+
+-----------------------------------------------------------------------------
+
+Host: mysql.topskills.study
+Database: topskills01
+user: topskills01
+pwd: ts2019
+
+-----------------------------------------------------------------------------
+
+SELECT * FROM PESSOA WHERE ID > 1
+INSERT INTO PESSOA
+(NOME, SOBRENOME, IDADE)
+VALUES
+('JUNINHO', 'DA CARBURA - GATAO', 23)
+
+_____________________________________________________________________________
+09/10/2019
+
+SELECT * FROM Bruna
+INSERT INTO Bruna
+(NOME, IDADE, NASCIMENTO)
+VALUES('ALOKA', 10, 01012020)
+UPDATE Bruna SET NOME = 'TESTE-UPDATE-NOME' WHERE ID = 1
+UPDATE Bruna SET nascimento = '10' WHERE ID = 1
+
+https://www.devmedia.com.br/comandos-basicos-em-sql-insert-update-delete-e-select/37170
