@@ -39,7 +39,22 @@ https://www.devmedia.com.br/comandos-basicos-em-sql-insert-update-delete-e-selec
 
 
 -------------------------------------------------------------------------------------
-10/01/2019
+13/01/2019
+
+-- SELECT * FROM PESSOA (AS P)
+-- SELECT * FROM ENDEREÇO
+
+
+SELECT * FROM pessoa AS P
+JOIN endereco AS E
+ON P.ENDERECO_ID = E.ID
+
+
+
+
+
+
+
 
 PK == PRIMARY KEY
 FK == CHAVE ESTRANGEIRA
@@ -80,7 +95,8 @@ VALUES
 --- LIGAR UMA TABELA NA OUTRA
 
 CRIA NOVA COLUNA(ENDEREÇO_ID) -- PESSOA Q TEM UM ENDEREÇO...
-FOREING KEY -- CREATE NEW FOREING KEY
+FOREING KEY -- (botão direito) CREATE NEW FOREING KEY -- seleciona a tabela 
+-- seleciona a coluna(os tipos precisam ser iguais..(int,...))
 
 
 
