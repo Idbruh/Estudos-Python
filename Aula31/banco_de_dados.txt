@@ -36,3 +36,51 @@ UPDATE Bruna SET NOME = 'TESTE-UPDATE-NOME' WHERE ID = 1
 UPDATE Bruna SET nascimento = '10' WHERE ID = 1
 
 https://www.devmedia.com.br/comandos-basicos-em-sql-insert-update-delete-e-select/37170
+
+
+-------------------------------------------------------------------------------------
+10/01/2019
+
+PK == PRIMARY KEY
+FK == CHAVE ESTRANGEIRA
+
+----------------------------------     
+|         P E S S O A            |     
+----------------------------------
+| PK |   ID                      |
+----------------------------------
+|     | NOME                     |
+|     | SOBRENOME                |
+|     | IDADE                    |
+|     |                          |
+----------------------------------
+
+----------------------------------
+|       E N D E R E Ç O          |
+----------------------------------
+| PK |   ID                      |
+----------------------------------
+|     | LOGRADOURO               |
+|     | NUMERO                   |
+|     | COMPLEMENTO              |
+|     | BAIRRO                   |
+|     | CIDADE                   |
+|     | CEP                      |
+|     |                          |
+----------------------------------
+
+SELECT * FROM TABELA_ENDEREÇO
+
+INSERT INTO TABELA_ENDEREÇO
+(LOGRADOURO,NUMERO, COMPLEMENTO, BAIRRO, CIDADE, CEP)
+
+VALUES
+('RUA SEU_NOME', 'SEM NUMERO', 'À EQUERDA', 'PROGRESSO', 'PLUMENAU', '89001-111')
+
+--- LIGAR UMA TABELA NA OUTRA
+
+CRIA NOVA COLUNA(ENDEREÇO_ID) -- PESSOA Q TEM UM ENDEREÇO...
+FOREING KEY -- CREATE NEW FOREING KEY
+
+
+
