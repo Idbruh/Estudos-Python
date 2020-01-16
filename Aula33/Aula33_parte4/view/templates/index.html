@@ -27,6 +27,28 @@
                 <td>{{ p.endereco_id}}</td>
             </tr>
             {% endfor %}
+            <tr>
+                <th>ID</th>
+                <th>Logradouro</th>
+                <th>Numero</th>
+                <th>Complemento</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Cep</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for e in lista2 %}
+            <tr>
+                <td>{{ e.id}}</td>
+                <td>{{ e.logradouro}}</td>
+                <td>{{ e.numero}}</td>
+                <td>{{ e.complemento}}</td>
+                <td>{{ e.bairro}}</td>
+                <td>{{ e.cidade}}</td>
+                <td>{{ e.cep}}</td>
+            </tr>
+            {% endfor %}
         </tbody>
     </table>
 </body>

@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/Users/900133/Documents/GitHub/TrabalhosPyhton/Aula33/Aula33_parte4')
 import MySQLdb
 from model.pessoa import Pessoa
 
@@ -10,7 +12,7 @@ class PessoaDb:
         comando_sql_select = "SELECT * FROM pessoa"
         self.cursor.execute(comando_sql_select)
         resultado = self.cursor.fetchall() 
-        return self.converter_tabela_dicionario_classe
+        return self.converter_tabela_dicionario_classe(resultado)
     
     def buscar_por_id(self,id):
         comando_sql_select = "SELECT * FROM pessoa"
@@ -18,8 +20,7 @@ class PessoaDb:
         resultado = self.cursor.fetchone() 
         return resultado
 
-    def converter_tabela_dicionario_classe(lista_tuplas):
-
+    def converter_tabela_dicionario_classe(self, lista_tuplas):
         lista_pessoas = []
         for p in lista_tuplas:
             p1 = Pessoa()
