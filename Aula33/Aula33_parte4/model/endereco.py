@@ -8,7 +8,7 @@ class Endereco:  # primeira letra sempre maiuscula
     cep = ''
     
     def exportar_txt(self,lista_enderecos):
-        with open('endereco.txt','a') as arquivo: 
+        with open('endereco.txt','a') as   arquivo: 
             for e in lista_enderecos:
                 arquivo.write(f"{e.id};{e.lograduro};{e.complemento};{e.bairro};{e.cidade};{e.cep}\n")
     
