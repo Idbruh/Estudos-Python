@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{titulo_app}} - Cadastrar</title>
+    <link rel="stylesheet" href="../static/estilo.css">
+</head>
+<body>
+    <div class="conteudo">
+        <form action="/salvar" method="get">
+            <input type="hidden" name="id" id="id" value="{{pessoa.id}}"> <br/>
+            <div class="descricoes"> 
+                <label for="nome">Nome:</label>
+            </div>
+            <input type="text" name="nome" id="nome" placeholder="Digite o nome" value="{{pessoa.nome}}"> <br/>
+            <div class="descricoes"> 
+                <label for="sobrenome">Sobrenome:</label>
+            </div>
+            <input type="text" name="sobrenome" id="sobrenome" value="{{pessoa.sobrenome}}"> <br/>
+            <div class="descricoes"> 
+                <label for="idade">Idade:</label>
+            </div>
+            <input type="text" name="idade" id="idade" value="{{pessoa.idade if pessoa.idade != 0 else ''}}"> <br/>
+            <input type="hidden" name="endereco_id" id="endereco_id" value="{{pessoa.endereco.id}}">
+            <div class="descricoes"> 
+                <label for="logradouro">Logradouro:</label>
+            </div>
+            <input type="text" name="logradouro" id="logradouro" value="{{pessoa.endereco.logradouro}}"> <br/>
+            <div class="descricoes"> 
+                <label for="numero">Numero:</label>
+            </div>
+            <input type="text" name="numero" id="numero" value="{{pessoa.endereco.numero}}"> <br/>
+            <div class="descricoes"> 
+                <label for="complemento">Complemento:</label>
+            </div>
+            <input type="text" name="complemento" id="complemento" value="{{pessoa.endereco.complemento}}"> <br/>
+            <div class="descricoes"> 
+                <label for="bairro">Bairro:</label>
+            </div>
+            <input type="text" name="bairro" id="bairro" value="{{pessoa.endereco.bairro}}"> <br/>
+            <div class="descricoes"> 
+                <label for="cidade">Cidade:</label>
+            </div>
+            <input type="text" name="cidade" id="cidade" value="{{pessoa.endereco.cidade}}"> <br/>
+            <div class="descricoes"> 
+                <label for="cep">CEP:</label>
+            </div>
+            <input type="text" name="cep" id="cep" value="{{pessoa.endereco.cep}}"> <br/>
+
+            <hr/>
+            <input type="submit" value="Salvar" class="salvar">
+            <a href="/cadastrar" class="limpar">Limpar</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -6,19 +6,19 @@ class PessoaDao:
     cursor = conexao.cursor()
 
     def listar_todos(self):
-        comando = f"SELECT * FROM pessoa AS P LEFT JOIN endereco AS E ON P.ENDERECO_ID = E.ID"
+        comando = f"SELECT * FROM 01_MDG_PESSOA AS P LEFT JOIN 01_MDG_ENDERECO AS E ON P.ENDERECO_ID = E.ID"
         self.cursor.execute(comando)
         resultado = self.cursor.fetchall()
         return resultado
     
     def buscar_por_id(self, id):
-        comando = f"SELECT * FROM pessoa AS P LEFT JOIN endereco AS E ON P.ENDERECO_ID = E.ID WHERE P.ID = {id}"
+        comando = f"SELECT * FROM 01_MDG_PESSOA AS P LEFT JOIN 01_MDG_ENDERECO AS E ON P.ENDERECO_ID = E.ID WHERE P.ID = {id}"
         self.cursor.execute(comando)
         resultado = self.cursor.fetchone()
         return resultado
 
     def salvar(self, pessoa:Pessoa):
-        comando = f""" INSERT INTO pessoa
+        comando = f""" INSERT INTO 01_MDG_PESSOA
         (
             NOME,
             SOBRENOME,
@@ -39,7 +39,7 @@ class PessoaDao:
         return id_inserido
 
     def alterar(self, pessoa:Pessoa):
-        comando = f""" UPDATE pessoa
+        comando = f""" UPDATE 01_MDG_PESSOA
         SET
             NOME = '{pessoa.nome}',
             SOBRENOME ='{pessoa.sobrenome}',
@@ -51,6 +51,6 @@ class PessoaDao:
         self.conexao.commit()
 
     def deletar(self, id):
-        comando = f"DELETE FROM pessoa WHERE ID = {id}"
+        comando = f"DELETE FROM 01_MDG_PESSOA WHERE ID = {id}"
         self.cursor.execute(comando)
         self.conexao.commit()

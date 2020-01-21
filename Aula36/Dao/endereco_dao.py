@@ -6,19 +6,19 @@ class EnderecoDao:
     cursor = conexao.cursor()
 
     def listar_todos(self):
-        comando = f"SELECT * endereco"
+        comando = f"SELECT * FROM 01_MDG_ENDERECO"
         self.cursor.execute(comando)
         resultado = self.cursor.fetchall()
         return resultado
     
     def buscar_por_id(self, id):
-        comando = f"SELECT * FROM endereco = {id}"
+        comando = f"SELECT * FROM 01_MDG_ENDERECO WHERE ID = {id}"
         self.cursor.execute(comando)
         resultado = self.cursor.fetchone()
         return resultado
 
     def salvar(self, endereco:Endereco):
-        comando = f""" INSERT INTO endereco
+        comando = f""" INSERT INTO 01_MDG_ENDERECO
         (
             LOGRADOURO,
             NUMERO,
@@ -42,7 +42,7 @@ class EnderecoDao:
         return id_inserido
 
     def alterar(self, endereco:Endereco):
-        comando = f""" UPDATE endereco
+        comando = f""" UPDATE 01_MDG_ENDERECO
         SET
             LOGRADOURO = '{endereco.logradouro}',
             NUMERO = '{endereco.numero}',
@@ -56,6 +56,6 @@ class EnderecoDao:
         self.conexao.commit()
 
     def deletar(self, id):
-        comando = f"DELETE FROM endereco WHERE ID = {id}"
+        comando = f"DELETE FROM 01_MDG_ENDERECO WHERE ID = {id}"
         self.cursor.execute(comando)
         self.conexao.commit()

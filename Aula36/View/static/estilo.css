@@ -1,0 +1,113 @@
+body{
+    background: #ccc;
+    color:#fff;
+}
+#tabela-pessoa{
+    width: 95%;
+    margin: 3em auto 2em;
+    border-collapse: collapse;
+    border-radius: 1em;
+    background: #fff;
+    border-radius: 1em;
+}
+#tabela-pessoa thead tr th{
+    background: #000;
+    padding: 0.8em;
+    text-align: left;
+    
+}
+#tabela-pessoa tbody tr td{
+    padding: 0.3em;
+    color:#000;
+}
+.btn-cadastro{
+    color:#fff;
+    background: #185201;
+    margin: 2.2 em ;
+    padding: 10px;
+    text-decoration: none;
+}
+.btn-cadastro:hover{
+    color:#185201;
+    background: #fff;
+    border: 1px solid #185201;
+}
+.conteudo{
+    width: 80%;
+    margin:80px auto;
+}
+
+
+/* Formularios */
+form{
+    width: 60%;
+    margin: 2em auto ;
+    padding: 3em 4em 2em;
+    border: 1px solid #777777a2;
+}
+.editar{
+    color:#fff;
+    padding: 0.2em;
+    text-decoration: none;
+    background:#f8d700;
+}
+.editar:hover{
+    color:#f8d700;
+    background:#fff;
+    border:1px solid #f8d700;
+}
+.excluir{
+    padding: 0.2em;
+    text-decoration: none;
+    color:#fff;
+    background:#f00;
+}
+.excluir:hover{
+    color:#f00;
+    background:#fff;
+    border: 1px solid #f00;
+}
+
+.salvar{
+    background:  #185201;
+    color: #fff;
+    padding: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 10em;
+}
+.salvar:hover
+{
+    color:#185201;
+    background: #fff;
+    border: 1px solid #185201;
+}
+.limpar{
+    padding: 0.6em 1em;
+    background: #f8d700;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 12em;
+}
+.limpar:hover
+{
+    color:#f8d700;
+    background: #fff;
+    border: 1px solid #f8d700;
+}
+input[type='text']{
+    padding: 1em 1.5em;
+    width: 60%;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+.descricoes{
+    width: 20%;
+    text-align: right;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+input[type='text'] , .descricoes{
+    display: inline-block;
+}

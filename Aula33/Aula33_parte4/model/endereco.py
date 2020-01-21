@@ -16,4 +16,4 @@ class Endereco:  # primeira letra sempre maiuscula
     def __str__(self):
         return f"{self.id};{self.lograduro};{self.complemento};{self.bairro};{self.cidade};{self.cep}"
 
-        
+        G,(D*HHCtmD^r7V
