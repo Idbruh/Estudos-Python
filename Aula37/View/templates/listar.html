@@ -10,40 +10,30 @@
 <body>
     <div class="conteudo">
         <a class='btn-cadastro' href="/cadastrar">Cadastrar</a>
-        <table id='tabela-pessoa'>
+        <table id='squad'>
             <thead>
                 <tr>
-                    <th>PessoaId</th>
+                    <th>Id</th>
                     <th>Nome</th>
-                    <th>Sobrenome</th>
-                    <th>Idade</th>
-                    <th>EnderecoId</th>
-                    <th>Logradouro</th>
-                    <th>Numero</th>
-                    <th>Complemento</th>
-                    <th>Bairro</th>
-                    <th>Cidade</th>
-                    <th>Cep</th>
+                    <th>Descricao</th>
+                    <th>NumeroPessoas</th>
+                    <th>LinguagemBackEnd</th>
+                    <th>FrameworkFrontEnd</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 {% for s in lista %}
                 <tr>
-                    <td>{{ p.id }}</td>
-                    <td>{{ p.nome }}</td>
-                    <td>{{ p.sobrenome }}</td>
-                    <td>{{ p.idade }}</td>
-                    <td>{{ p.endereco.id if p.endereco.id  else '' }}</td>
-                    <td>{{ p.endereco.logradouro if p.endereco.logradouro else '' }}</td>
-                    <td>{{ p.endereco.numero if p.endereco.numero else '' }}</td>
-                    <td>{{ p.endereco.complemento if p.endereco.complemento else '' }}</td>
-                    <td>{{ p.endereco.bairro if p.endereco.bairro else '' }}</td>
-                    <td>{{ p.endereco.cidade if p.endereco.cidade else '' }}</td>
-                    <td>{{ p.endereco.cep if p.endereco.cep else '' }}</td>
+                    <td>{{ s.id }}</td>
+                    <td>{{ s.nome }}</td>
+                    <td>{{ s.descricao }}</td>
+                    <td>{{ s.numeropessoas }}</td>
+                    <td>{{ s.linguagembackend.id }}</td>
+                    <td>{{ s.frameworkfrontend }}</td>
                     <td>
-                        <a href="/cadastrar?id={{ p.id }}" class="editar">Editar</a>
-                        <a href="/excluir?id={{ p.id }}&id_end={{ p.endereco.id }}" class="excluir">Excluir</a>
+                        <a href="/cadastrar?id={{ s.id }}" class="editar">Editar</a>
+                        <a href="/excluir?id={{ s.id }}" class="excluir">Excluir</a>
                     </td>
                 </tr>
                 {% endfor %}

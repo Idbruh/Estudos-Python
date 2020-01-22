@@ -1,6 +1,6 @@
+import MySQLdb
 import sys
 sys.path.append('/Users/900133/Documents/GitHub/TrabalhosPyhton/Aula37')
-import MySQLdb
 from Model.squad import Squad
 
 class SquadDao:
@@ -8,13 +8,13 @@ class SquadDao:
     cursor = conexao.cursor()
 
     def listar_todos(self):
-        comando = f"SELECT * squad AS S "
+        comando = "SELECT * FROM squad.squad"
         self.cursor.execute(comando)
         resultado = self.cursor.fetchall()
         return resultado
     
     def buscar_por_id(self,ID):
-        comando = f"SELECT * squad WHERE S.ID = {ID}"
+        comando = f"SELECT * squad WHERE ID = {ID}"
         self.cursor.execute(comando)
         resultado = self.cursor.fetchone()
         return resultado
@@ -22,7 +22,7 @@ class SquadDao:
     def salvar(self, squad:Squad):
         comando = f""" INSERT INTO squad
         (
-            NOME,
+            Nome,
             Descricao,
             NumeroPessoas,
             LinguagemBackEnd,

@@ -1,3 +1,4 @@
+import MySQLdb
 import sys
 sys.path.append('/Users/900133/Documents/GitHub/TrabalhosPyhton/Aula37')
 

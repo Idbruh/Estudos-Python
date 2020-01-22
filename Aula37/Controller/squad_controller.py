@@ -12,7 +12,7 @@ class SquadController:
         lista_squad = []
         lista_tuplas = self.dao.listar_todos()
         for s in lista_tuplas:
-            squad = squad()
+            squad = Squad()
             squad.id =  s[0]
             squad.nome = s[1]
             squad.descricao = s[2]
@@ -20,11 +20,11 @@ class SquadController:
             squad.linguagembackend = s[4]
             squad.frameworkfrontend = s[5]
             
-            lista_squads.append(squad)
-        return lista_squads
+            lista_squad.append(squad)
+        return lista_squad
 
     def buscar_por_id(self, id):
-        p = self.dao.buscar_por_id(id)
+        s = self.dao.buscar_por_id(id)
         squad = Squad()
         squad.id =  s[0]
         squad.nome = s[1]
@@ -35,13 +35,11 @@ class SquadController:
         return squad
 
     def salvar(self, squad:Squad):
-        squad.id = self.squad_controller.salvar(squad)
         return self.dao.salvar(squad)
 
     def alterar(self, squad:Squad):
-        self.endereco_controller.alterar(squad)
         self.dao.alterar(squad)
 
-    def deletar(self, ID):
-        self.dao.deletar(ID)
+    def deletar(self, id):
+        self.dao.deletar(id)
 
