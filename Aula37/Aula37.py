@@ -6,3 +6,10 @@
 # 5-Criar View tipo console para realizar as 4 operacoes de CRUD de Squads
 # 6-Criar View tipo Web para realizar as 4 operacoes de CRUD de Squads
 # Squad: Nome, Descricao, NumeroPessoas, LinguagemBackEnd, FrameworkFrontEnd 
+
+
+
+#-- PARTE 2
+# CRUD  -- LINGUAGEM BACKEND
+# CRUD DE SGBDS (BD - EX: , SQLSERVER, ORACLE)
+#  ADICIONAR VINCULO DESTAS 3 TABELAS NA TABELA SQUADS (FK) 

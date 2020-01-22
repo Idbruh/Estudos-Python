@@ -31,22 +31,22 @@ def cadastrar():
 
 @app.route('/excluir')
 def excluir():
-    id = int(request.args['id'])
+    # id = int(request.args['id'])
     id = request.args['id']
     squad_controller.deletar(id)
-    if id != 'None':
-        squad_controller.deletar(id)
+    # if id != 'None':
+    #     squad_controller.deletar(id)
     return redirect('/listar')
 
 @app.route('/salvar')
 def salvar():
-    squad = squad()
+    squad = Squad()
     squad.id = request.args['id']
     squad.nome = request.args['nome']
-    squad.descricao = request.args['Descricao']
-    squad.numeropessoas = request.args['NumeroPessoas']
-    squad.linguagembackend = request.args['LinguagemBackEnd']
-    squad.frameworkfrontend = request.args['FrameworkFrontEnd']
+    squad.descricao = request.args['descricao']
+    squad.numeropessoas = request.args['numeropessoas']
+    squad.linguagembackend = request.args['linguagembackend']
+    squad.frameworkfrontend = request.args['frameworkfrontend']
     if squad.id == 0:
         squad_controller.salvar(squad)
     else:

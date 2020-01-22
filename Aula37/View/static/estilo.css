@@ -1,5 +1,5 @@
 body{
-    background: #ccc;
+    background: #accbdd;
     color:#fff;
 }
 #squad{
@@ -11,18 +11,18 @@ body{
     border-radius: 1em;
 }
 #squad thead tr th{
-    background: #000000;
+    background: #e7fd86;
     padding: 0.8em;
     text-align: left;
     
 }
 #squad tbody tr td{
     padding: 1px;
-    color:#000;
+    color:#2e79eb;
 }
 .btn-cadastro{
     color:#fff;
-    background: #185201;
+    background: #7eb169;
     margin: 2.2 em ;
     padding: 10px;
     text-decoration: none;
@@ -41,20 +41,20 @@ body{
 /* Formularios */
 form{
     width: 60%;
-    margin: 2em auto ;
+    margin: 4em auto ;
     padding: 3em 4em 2em;
-    border: 1px solid #777777a2;
+    border: 1px solid #a3e9cca2;
 }
 .editar{
     color:#fff;
     padding: 0.2em;
     text-decoration: none;
-    background:#f8d700;
+    background:#f1e387;
 }
 .editar:hover{
-    color:#f8d700;
+    color:#f1e387;
     background:#fff;
-    border:1px solid #f8d700;
+    border:1px solid #f8b600;
 }
 .excluir{
     padding: 0.2em;
@@ -63,7 +63,7 @@ form{
     background:#f00;
 }
 .excluir:hover{
-    color:#f00;
+    color:#37c5d8;
     background:#fff;
     border: 1px solid #f00;
 }
@@ -105,7 +105,7 @@ input[type='text']{
 .descricoes{
     width: 20%;
     text-align: right;
-    margin-right: 10px;
+    margin-right: 30px;
     text-transform: uppercase;
 }
 input[type='text'] , .descricoes{

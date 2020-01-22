@@ -14,7 +14,7 @@ class SquadDao:
         return resultado
     
     def buscar_por_id(self,ID):
-        comando = f"SELECT * squad WHERE ID = {ID}"
+        comando = f"SELECT * FROM  squad WHERE ID = {ID}"
         self.cursor.execute(comando)
         resultado = self.cursor.fetchone()
         return resultado
@@ -45,7 +45,7 @@ class SquadDao:
     def alterar(self, squad:Squad):
         comando = f""" UPDATE squad
         SET
-            NOME = '{squad.nome}',
+            Nome = '{squad.nome}',
             Descricao ='{squad.descricao}',
             NumeroPessoas = '{squad.numeropessoas}',
             LinguagemBackEnd = '{squad.linguagembackend}',

@@ -16,22 +16,22 @@
             </div>
             <input type="text" name="nome" id="nome" placeholder="Digite o nome do Squad" value="{{squad.nome}}"> <br/>
             <div class="descricoes"> 
-                <label for="descricao">descricao:</label>
+                <label for="descricao">Descricao:</label>
             </div>
             <input type="text" name="descricao" id="descricao"placeholder="Digite a descrição do Squad" value="{{squad.descricao}}"> <br/>
             <div class="descricoes"> 
-                <label for="numeropessoas">numeropessoas:</label>
+                <label for="numeropessoas">NumeroPessoas:</label>
             </div>
             <input type="text" name="numeropessoas" id="numeropessoas" placeholder="Digite o numero de pessoas do  Squad" value="{{squad.numeropessoas if squad.numeropessoas != 0 else ''}}"> <br/>
-            <input type="hidden" name="ID" id="endereco_id" value="{{squad.ID}}">
+            <input type="hidden" name="id" id="id" value="{{squad.id}}">
             <div class="descricoes"> 
-                <label for="linguagembackend">linguagembackend:</label>
+                <label for="linguagembackend">LinguagemBackEnd:</label>
             </div>
             <input type="text" name="linguagembackend" id="linguagembackend" placeholder="Digite a Linguagem BackEnd do Squad" value="{{squad.linguagembackend}}"> <br/>
             <div class="descricoes"> 
-                <label for="frameworkfrontend">frameworkfrontend:</label>
+                <label for="frameworkfrontend">FrameworkFrontEnd:</label>
             </div>
-            <input type="text" name="frameworkfrontend" id="frameworkfrontend" placeholder="Digite a Linguagem FrontEnd do Squad" value="{{squad.frameworkfrontend}}"> <br/>
+            <input type="text" name="frameworkfrontend" id="frameworkfrontend" placeholder="Digite o Framework FrontEnd do Squad" value="{{squad.frameworkfrontend}}"> <br/>
             <div class="descricoes"> 
             </div>
             <hr/>
