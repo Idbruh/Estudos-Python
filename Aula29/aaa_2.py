@@ -2,7 +2,7 @@
 # Funções, While, reforço de lista, tupla, dicionário
 
 
-from bbb import *
+from bbb_2 import *
 
 
 op = 0

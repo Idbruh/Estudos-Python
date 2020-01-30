@@ -1,0 +1,18 @@
+        ''' Aula 41 '''
+
+# Criar uma nova pasta com o nome Aula41
+# Dentro dela criar um novo virtualenv
+### Você pode usar o comando no terminal
+### $> where python
+### para achar o endereço do python
+virtualenv --python="python3" Aula50/ENV
+### virtualenv --python "caminho do python" teste-python
+
+linux
+source aula50/ENV/bin/activate
+
+# Crie uma aplicação flask que tenha os 4 metodos
+# HTTP. Quando chamamos retorne uma string
+# A classe controller e a rota de ser 'pessoa'
+ bv
+ |ZSX

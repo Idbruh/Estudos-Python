@@ -22,7 +22,8 @@ def desembarque(opc1, opc2, lado):
         lado.append('canibal')
     return lado
 
-#Neste método, será feita uma simulação de como vai ficar o lado de partida caso a viajem seja feita, validando se o canibal vai comer ou não.
+#Neste método, será feita uma simulação de como vai ficar o lado de partida caso a viajem seja feita, validando se o
+#  canibal vai comer ou não.
 def verificar_se_viagem_bem_sucedida(lado_esq, lado_dir, opc1, opc2, lado_partida):
     #Criando variáveis para saber quantos viajantes são missionários e canibais para utilizar na simulação.
     missionarios_barco = 0
