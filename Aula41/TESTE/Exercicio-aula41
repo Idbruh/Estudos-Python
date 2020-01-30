@@ -14,5 +14,7 @@ source aula50/ENV/bin/activate
 # Crie uma aplicação flask que tenha os 4 metodos
 # HTTP. Quando chamamos retorne uma string
 # A classe controller e a rota de ser 'pessoa'
- bv
- |ZSX
+
+
+criar controladoras (CONTROLLLERS)
+criar dao  (DAO)
