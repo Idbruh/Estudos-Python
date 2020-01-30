@@ -1,7 +1,7 @@
 import sys
 sys.path.append('/Users/900133/Documents/GitHub/TrabalhosPyhton/Aula33/Aula33_parte4')
 from model.pessoa import Pessoa
-from dao.pessoadb import PessoaDb
+from Dao.pessoadb import PessoaDb
 
 class PessoaController:
     p = Pessoa()

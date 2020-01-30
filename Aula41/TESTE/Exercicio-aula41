@@ -17,4 +17,4 @@ source aula50/ENV/bin/activate
 
 
 criar controladoras (CONTROLLLERS)
-criar dao  (DAO)
+criar dao  (DAO)  (acessar bd - converter para classe )

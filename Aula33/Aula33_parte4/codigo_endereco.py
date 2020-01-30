@@ -4,7 +4,7 @@ sys.path.append('/Users/900133/Documents/GitHub/TrabalhosPyhton/Aula33/Aula33_pa
 import sys
 sys.path.append('/Users/900133/Documents/GitHub/TrabalhosPyhton/Aula33/Aula33_parte4')
 from model.endereco import Endereco
-from dao.enderecodb import EnderecoDb
+from Dao.enderecodb import EnderecoDb
 
 e = Endereco()
 e_db = EnderecoDb()
