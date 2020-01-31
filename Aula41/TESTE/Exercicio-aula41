@@ -6,7 +6,17 @@
 ### $> where python
 ### para achar o endereço do python
 virtualenv --python="python3" Aula50/ENV
-### virtualenv --python "caminho do python" teste-python
+### virtualenv --python "caminho do python" Aula41/ENV
+caminho/Aula41/ENV/Script/activate
+pip3 install flask
+flask restful
+flask_mysqldb
+criar interpretador
+pegar existente e buscar em docs > usuario: docs: aula41: env: scripts: python.exe
+adicina config no pycharm
+
+
+
 
 linux
 source aula50/ENV/bin/activate
@@ -17,4 +27,34 @@ source aula50/ENV/bin/activate
 
 
 criar controladoras (CONTROLLLERS)
-criar dao  (DAO)  (acessar bd - converter para classe )
+criar dao  (DAO)  (acessar bd - converter para classe )(0 classe com os metodos do crud
+
+
+def __init__(self): metodo construtor
+
+bd: primeiro ponto importar do mysql
+
+
+ def get(self, id=None): se ele vier none pode ser verificado aqui
+        if id: se id existir, retorna um
+            msg = self.dao.get_by_id(id)
+        msg = self.dao.list_all() se não retorna todos
+        return msg
+
+        *********melhor forma ( se ele cair no primeiro paramentro ele vai executar o return e  vai sair do metodo ignorando oproximo metodo)
+         def get(self, id=None):
+        if id:
+            return self.dao.get_by_id(id)
+        return self.dao.list_all()
+___________________________________
+
+    def delete(self,id):
+        msg = self.dao.remove(id)
+        return msg
+        _______________________
+
+
+        quando passa um objeto ele referenciado por um endereço de memoria netão dá erro na conversão para json
+        solução 1- transforma em dicionario
+        solução 2- transforma em string(str)
+        converte as pessoas antes de dar .append(lista)
