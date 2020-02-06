@@ -1,0 +1,17 @@
+from flask import request
+
+from Controller.base_controller import BaseController
+from Dao.livro_dao import LivroDao
+from Model.livros_model import LivrosModel
+
+class LivrosController(BaseController):
+    def __init__(self):
+        super().__init__(LivroDao())
+
+    def post(self):
+        self.carrega_parametros()
+        model = LivrosModel(self.nome, self.descricao)
+        return  super().post(model)
+
+    def put(self,id):
+        
