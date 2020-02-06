@@ -44,3 +44,4 @@ class PessoaDao:
         self.cursor.execute("DELETE FROM `bruna-aula31-db`.pessoa WHERE ID = {}".format(id))
         self.connection.commit()
         return 'Removido a pessoa de id: {}'.format(id)
+
