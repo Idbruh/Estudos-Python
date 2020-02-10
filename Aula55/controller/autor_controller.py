@@ -1,0 +1,24 @@
+from flask import request
+
+from controller.base_controller import BaseController
+from model.autor import Autor
+
+Class AutorController(BaseController):
+def __init__(self):
+    dao = AutorDao()
+    super().__init__(dao)
+
+    def post(self):
+
+        return super().post(self.carrega_parametros())
+
+    def put(self, id):
+
+        model = carrega_parametros()
+        return super().put(model)
+
+    def carrega_parametros(self):
+        model = Autor()
+        model.pseudonimo = request.json['pseudonimo']
+        model.descricao = request.json['descricao']
+        model.pessoa_id = request.json['pessoa_id']
