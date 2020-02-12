@@ -3,4 +3,4 @@ from model.autor import Autor
 
 class AutorDao(BaseDao):
     def __init__(self):
-        super().__init__(Editora)
+        super().__init__(Autor)

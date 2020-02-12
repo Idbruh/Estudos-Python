@@ -1,11 +1,9 @@
 import sqlalchemy as db
-from sqlalchemy import Column, Integer, String
 
-from model.base import Base
-
+from Aula55.model.base import Base
 
 class Genero(Base):
     __tablename__ = "LIVRARIA_GENERO"
-    id = Column(Integer, primary_key=True)
-    nome = String(length=100)
-    descricao = String(length=250)
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(length=100))
+    descricao = db.Column(db.String(length=200))

@@ -1,4 +1,3 @@
-
 from dao.base_dao import BaseDao
 from model.genero import Genero
 
