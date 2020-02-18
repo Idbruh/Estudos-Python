@@ -3,7 +3,6 @@ from sqlalchemy.orm import relationship
 
 from model.pessoa import Pessoa
 from model.base import Base
-from dao.pessoa_dao import PessoaDao
 
 class Autor(Base):
     __tablename__ = "LIVRARIA_AUTOR"

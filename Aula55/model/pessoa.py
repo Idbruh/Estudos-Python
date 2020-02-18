@@ -10,7 +10,7 @@ class Pessoa(Base):
     data_nascimento = db.Column(db.DATE)
     naturalidade = db.Column(db.String(length=100))
 
-    def __init__(self, id, nome, sobrenome, data_nascimento, naturalidade):
+    def __init__(self, nome, sobrenome, data_nascimento, naturalidade, id=None):
         self.id = id
         self.nome = nome
         self.sobrenome = sobrenome
