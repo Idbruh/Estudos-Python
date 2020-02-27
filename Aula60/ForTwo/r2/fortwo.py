@@ -1,4 +1,4 @@
-from Aula60.ForTwo.r2.local import Local
+from ForTwo.r2.local import Local
 class Fortwo:
     def __init__(self):
         self.__pessoas_permitidas = ['piloto', 'chefe de serviço','policial']
@@ -18,6 +18,8 @@ class Fortwo:
        if self.__valida_regra_passageiro__(pessoa):
             self.__passageiro = pessoa
             return True
+       elif pessoa == '':
+           return True
        return False
 
     def get_passageiro(self):
@@ -38,9 +40,9 @@ class Fortwo:
     def viagem(self, origem:Local, destino):
         print(f"Saindo do {origem}")
         print('Iniciando a viagem...')
-        print(f'motorista: {self.__motorista} passageiro: {self.__passageiro}')
+        print(f'motorista: {self.__motorista}\npassageiro: {self.__passageiro}')
         print(f"Chegando no {destino}")
         print('Finalizando a viagem ...')
         print(f'{self.__motorista} e {self.__passageiro} descem no {destino}')
-        print(f'origem: {origem.get_pessoas()}')
-        print(f'destino: {destino.get_pessoas()}')
+        print(f'{origem}: {origem.get_pessoas()}')
+        print(f'{destino}: {destino.get_pessoas()}')

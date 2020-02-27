@@ -3,7 +3,9 @@ class Local:
         self.__pessoas = lista
 
     def entrada(self, pessoa:str):
-        if self.valida_entrada(pessoa):
+        if pessoa == '':
+            return True
+        elif self.valida_entrada(pessoa):
             self.__pessoas.append(pessoa)
             return True
         return False
@@ -18,7 +20,6 @@ class Local:
 
     # valida saída de alguma pessoa do terminal
     def valida_saida(self, pessoa: str):
-
         if pessoa in self.__pessoas:
             if pessoa == 'policial' and 'presidiário' in self.__pessoas and len(self.__pessoas) > 3:
                 return False
@@ -42,10 +43,10 @@ class Local:
             return False
         return True
 
-    def valida_entrada(self, pessoa):
+    def valida_entrada(self, pessoa: object) -> object:
         if len(self.__pessoas) <= 2:
             if len(self.__pessoas) == 1:
-                if pessoa != 'policial' and 'presidiário' in self.__pessoas:
+                if pessoa == 'policial' and 'presidiário' in self.__pessoas:
                     return False
                 if pessoa == 'piloto' and ('comissário1' in self.__pessoas or 'comissário2' in self.__pessoas):
                     return False

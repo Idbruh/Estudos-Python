@@ -1,4 +1,4 @@
-from Aula60.ForTwo.r2.viagem import viagem, terminal, aviao
+from ForTwo.r2.viagem import viagem, terminal, aviao
 
 viagem('policial','presidiario', terminal, aviao)
 viagem('policial','', aviao, terminal)
