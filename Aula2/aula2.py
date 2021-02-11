@@ -1,6 +1,6 @@
 idade = 27 #numero_inteiro
 salario = 490.00 #numero_real
-nome = 'idBruh' #string(palavras e frases): precisa estar entre as aspas 
+nome = 'Idbruh_1' #string(palavras e frases): precisa estar entre as aspas 
 verdadeiro = True
 falso = False
 
@@ -33,8 +33,8 @@ print((nome_completo).capitalize() )#--- .capitalize: primeira letra em maiuscul
 
 pessoa = [" ","Exemplo1","Exemplo2","Exemplo3"]
 print(pessoa)
-print((' nem ').join(pessoa))
-frase = 'Teti torrado'
+print((' olha ').join(pessoa))
+frase = 'cinquenta.'
 print('a'.join(frase))
 print(pessoa[1:])# : == onde começa e onde termina
 print(pessoa[1:3])#espaço tambem conta
