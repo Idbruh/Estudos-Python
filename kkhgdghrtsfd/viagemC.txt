@@ -1,8 +1,0 @@
-policial;presidiario;10:30;10:40
-policial;piloto;10:30;10:40
-piloto;oficial;10:30;10:40
-policial;presidiario;10:30;10:40
-policial;presidiario;10:30;10:40
-policial;presidiario;10:00;10:10
-policial;presidiario;10:00;10:10
-oficial;presidiario;10:00;10:10
