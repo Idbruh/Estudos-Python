@@ -1,0 +1,26 @@
+-   Além do fato de que o Python hoje é a linguagem mais utilizada para desenvolvimento de scripts para integrações de
+ambientes em diferentes plataformas, também é uma linguagem simples para aprender a programação que contém em sua
+comunidade um forte pilar para a sua propagação e incentivo à sua utilização.
+
+-   Um outro fator que será importante para você é que o Python é a linguagem de programação mais utilizada no mundo de
+segurança da informação. Não irei me estender sobre sua história, mas algumas informações são importantes:
+    -   O Python foi lançado na Internet em 1991 (comparada com outras linguagens mais tradicionais, como a linguagem C,
+    por exemplo, o Python é um bebê).
+
+    -   O seu criador chama-se Guido Van Rossum, um holandês que desenvolveu essa linguagem com o objetivo de criar algo
+    que não se parecesse com qualquer outro concorrente. Por isso, já na sua concepção, o Python tinha como objetivo
+    atender os profissionais que trabalham com tecnologia, mas que são “resistentes” à programação, como: cientistas,
+    engenheiros de diversas áreas, especialistas em dados, especialistas em segurança, entre outros. Por isso, duas
+    palavras nortearam o trabalho de Guido Van Rossum, são elas: legibilidade e produtividade.
+
+    -   Trabalharemos utilizando a versão 3.6.1, cuidado… pois existem grandes diferenças entre as gerações 2 e 3 do
+    Python, ou seja, entre o Python 2.x e o Python 3.x, há um abismo de diferenças que podem interferir diretamente
+    no seu código.
+
+    -   Alocação de memória e gerenciamento de recursos são conceitos com que não precisamos nos preocupar em Python,
+    uma vez que a própria linguagem se encarrega de controlar, de maneira eficiente, esses serviços.
+    Em relação ao desenvolvedor, isso é de grande valia, uma vez que o programador foca apenas no desenvolvimento da
+    sua solução/ferramenta
+
+    -    Python é uma linguagem livre, que depende bastante da sua comunidade, por isso, não deixe de participar
+    “ativamente” da comunidade. Temos uma comunidade para brasileiros, disponível no site: http://python.org.br/.
