@@ -3,7 +3,7 @@ salario = 490.00 #numero_real
 nome = 'Idbruh_1' #string(palavras e frases): precisa estar entre as aspas 
 verdadeiro = True
 falso = False
-
+print('-----------------')
 print('=' * 50) 
 print('\n' * 3) #pula para a proxima linha(\n) * 3
 print('\t Testee', 'da', "aula2") #tab(\t): dar espaço maior
@@ -13,12 +13,14 @@ print(f'idade:{idade} salario:{salario} nome:{nome}') #interpolação de string
 print('\n'*3)
 print('='*50)
 
-
+print('='*50)
 print('''este FDS eu fui para a praia tomar sol
          e fiquei no sol fazendo exercicio de python 
          e fiquei todo queimado''')
 
+print('='*50)
 
+print('='*50)
 nome_completo = '  bru ' '' 'Carmo '#--- concatenação de string
 print(nome_completo)
 
@@ -31,6 +33,9 @@ print((nome_completo).strip() )#--- .remover os espaços em  branco - começo e 
 print((nome_completo).strip() )
 print((nome_completo).capitalize() )#--- .capitalize: primeira letra em maiusculo'''
 
+print('='*50)
+
+print('='*50)
 pessoa = [" ","Exemplo1","Exemplo2","Exemplo3"]
 print(pessoa)
 print((' olha ').join(pessoa))
